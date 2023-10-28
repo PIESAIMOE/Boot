@@ -1,0 +1,25 @@
+.rating{
+    position: absolute;
+    top:60%;
+    left:85%;
+}
+
+.rating .rate{
+    display: none;
+}
+.rating label{
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.2s ease;
+}
+.rate:not(:checked) ~ label:hover,
+.rate:not(:checked) ~ label:hover ~ label{
+    color:red;
+}
+.rate:checked ~ label{
+    color: red;
+}
+
+
+
