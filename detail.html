@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boot</title>
+    <link rel="stylesheet" type="text/css" href="bs\css\bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   
+</head>
+<body>
+    
+    <div class="container-xxl">
+
+        <div class="row">
+            <div class="col">
+                <div class="slider">                 
+                    <div class="product me-2 text-center "  style="width:10rem;">
+                        <i class="fa-solid fa-chevron-up" style="color: #333;"></i>
+                        <img src="image/sad.jpg" class="img-thumbnail" alt="..." onclick="clickme(this)">
+                        <img src="image/mind.jpg" class="img-thumbnail" alt="..." onclick="clickme(this)">
+                        <img src="image/sad.jpg" class="img-thumbnail" alt="..." onclick="clickme(this)">
+                        <img src="image/sad.jpg" class="img-thumbnail" alt="..." onclick="clickme(this)">
+                        <img src="image/sad.jpg" class="img-thumbnail" alt="..." onclick="clickme(this)">
+                        <img src="image/sad.jpg" class="img-thumbnail" alt="..." onclick="clickme(this)">
+                        <i class="fa-solid fa-chevron-down" style="color: #333;"></i>
+                    </div>
+                    <div class="container"  style="width:40rem;">
+                        <img class="img-fluid" src="image/sad.jpg" id="imagebox" alt="">
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col">
+
+                <div class="content">
+                    <p class="brand">Brand: Varanga</p>
+                    <h2>Woman Black Quirky Print Empire Dress</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="price">Brand: Varanga</p>
+                    <p>Size: <select name="size">
+
+                            <option value="select size">select size</option>
+                            <option value="small">small</option>
+                            <option value="medium">medium</option>
+                            <option value="large">large</option>
+
+                        </select></p>
+                    <p>Quantity: <input type="text" value="1"></p>
+                    <button type="button">
+                        <i class="fa fa-shopping-cart"></i>
+                        Add to cart</button>
+                </div>
+
+            </div>
+        </div>
+        
+    <script>
+        function clickme(smallImg) {
+
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src;
+
+        }
+
+    </script>
+</body>
+</html>
