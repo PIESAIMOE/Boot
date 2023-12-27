@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Inclusive+Sans&family=Mate+SC&family=Rubik+Moonrocks&family=Ysabeau+SC:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Quattrocento Sans', sans-serif;
+    font-size: large;
+}
+.logo_name{
+  font-size: xx-large;
+  font-family:'Rubik Moonrocks', sans-serif;   
+}
+.logo{
+  width: 40px;
+  height: 40px;
+}
+.search .btn{
+  position:absolute;
+}
+.cata{
+  display:none;
+  margin: 0 10px 0 30px;
+}
+.header{
+  margin-top:10rem;
+  margin-bottom:50px;
+}
+.notice_board{
+  font-family:'Rubik Moonrocks', sans-serif;
+}
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.img_card{
+  position: relative;
+}
+.rating{
+  position: absolute;
+  top:50%;
+  left:80%; 
+  display: flex;
+  height: 15px; 
+}
+.rating .rate{
+  background: none;
+  padding: 0%;
+  border: 0;
+  cursor: pointer;
+}
+.rating .rate i{
+  display: block;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.2s ease;
+}
+#reactBefore{
+  display: block;
+}
+#reactAfter{
+  display: none;
+}
+
+.detail_page{
+  height:10rem;
+}
+@media (max-width:991px) {
+  .form-control{
+    width:150px;
+  }
+  .logo_name{
+    font-size: x-large;
+    font-family:'Rubik Moonrocks', sans-serif;   
+  }
+  .logo{
+    width: 30px;
+    height: 30px;
+  }
+  * {
+    font-size: medium;
+  }
+
+}
+@media (max-width:768px) {
+  .card img {
+    height : 11em;
+  }
+  .form-control{
+    display: none;
+  }
+  .logo_name{
+    display: none;
+    font-size:20px;
+    font-family:'Rubik Moonrocks', sans-serif;   
+  }
+  .logo{
+    margin-left:20px;
+    width: 30px;
+    height: 30px;
+  }
+  * {
+    font-size: 12px;
+  }
+  .search_png{
+    width: 20px;
+    height: 20px;
+  }
+  .user{
+    width: 30px;
+    height: 30px;
+  }
+  .search .btn{
+    position:inherit;
+  }
+  .catago{
+    display: none;
+  }
+  .cata{
+    display: block ;
+  }
+  .noti{
+    width: 20px;
+    height: 20px;
+  }
+  .coin{
+    width: 20px;
+    height: 20px;
+  }
+
+}
+/* .img-wrapper {
+  max-width: 100%;
+  height: 65vw;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+      max-height: 100%;
+  }
+@media (min-width: 767px) {
+  .carousel-inner {
+    display: flex;
+  }
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 calc(100%/3);
+    display: block;
+  }
+  .img-wrapper{
+    height: 20vw;
+  }
+}
+@media (max-width: 767px) {
+  .card .img-wrapper {
+    height: 17em;
+  }
+}
+
+.carousel-inner{
+  padding: 1em;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #a8a8a8;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+} */

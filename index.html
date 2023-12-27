@@ -5,66 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boot</title>
     <link rel="stylesheet" type="text/css" href="bs\css\bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet"  href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN">
     
 </head>
-<body id="catagories" data-bs-spy="scroll" data-bs-target=".navbar">
-  
-<!-- nav -->
+<body>
 
-  <nav class="navbar navbar-expand-xl fixed-top justify-content-end"  style="background-color: #fff; height:80px;">
-    <div class="container ps-0">
-      <div class="navbar-brand m-1 d-flex">
-        <img src="image/logo.svg" alt="Logo" width="40" height="40" class=" d-inline-block align-text-top">
-        <div>
-          <span class=" text logo_name me-4 ms-2">Tobaco</span>
-        </div>
+  <nav class="navbar fixed-top"  style="background-color: #ffffff;">
+    
+    <div class="navBar container ps-0">
+      <div class="right m-1 d-flex">
+        <a class="link-dark link-underline-opacity-0 d-flex" href="#catagories">
+          <img src="image/security.png" alt="Logo" class="logo d-inline-block align-text-top">
+          <div>
+            <span class=" text logo_name me-3 ms-2">Sold</span>
+          </div>         
+        </a>
+        <div class="catago navbar-text mt-1 pt-2 "><a class="nav-link">CATAGORIES</a></div>
+        <img src="image/cata.png" width="25" height="25" class="cata my-2">
       </div>   
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
-          <li class="nav-item me-3">
-            <a class="nav-link active " href="#catagories">Catagories</a>
-          </li>
-          <li class="nav-item me-3">
-            <a class="nav-link" href="#ending_soon" >Ending Soon</a>
-          </li>
-          <li class="nav-item me-3">
-            <a class="nav-link" href="#lastest" >Latest</a>
-          </li>
-          <li class="nav-item me-3">
-            <a class="nav-link" href="#popular" >Popular</a>
-          </li>
-          <li class="nav-item me-3">
-            <a class="nav-link disabled" aria-disabled="true">About Coin</a>
-          </li>
-        </ul>
+
+      <div class=" search ">
+        <form class="search d-flex p-auto me-3" role="search">
+          <input class="form-control ms-5 me-3" type="search" placeholder="Search"  aria-label="Search">
+          <button type="button" class="btn">
+            <img class="search_png" src="image/search.svg " style="width:25px;" >
+          </button>
+        </form>  
       </div>
 
-      <div class="d-flex ">  
-        <form class="d-flex me-4" role="search">
-          <input class="form-control px-0" type="search" placeholder="Search"  aria-label="Search">
-          <button type="button" class="btn btn-link position-absolute">
-            <img src="image/search.svg " style="width:20px;" >
-          </button>
-        </form>
-
+      <div class="left d-flex">  
+        <a class="nav-link" href="#">
+         <img src="image/coin (3).png"  width="25" height="25" class="coin my-2">
+       </a>
+       <div class="coin_num my-2 me-4">    
+         <span class="ms-1 fw-bold">1000000000</span>
+       </div>
+         <img src="image/noti.png" width="23" height="23" class="noti my-2 ">
+        <div>    
+          <span class=" my-2 me-4">1</span>
+        </div>
         <a class="nav-link me-3" href="signIn.html" >
-          <img src="image/user.svg" width="40" height="40" class="user p-0" alt="profile">
+          <img class="user"  src="image/user.svg" width="40" height="40" class="user p-0" alt="profile">
         </a>
-      <button class="navbar-toggler p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
       </div>
     </div>
   </nav>
-  <!-- /nav -->
 
+  <!-- ------------------------------- -->
   <!-- Header popular catagory -->
 
-  <div id="catagories  " class="header container p-0">
+  <div id="catagories" class="header container p-0">
     <div class="container-fluid row h-auto">
       <div class="container-fluid col-sm-8 m-0 p-0">
         <div id="carouselExampleDark" class="carousel carousel-dark slide mt-0 p-0">
@@ -117,14 +109,14 @@
               <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
-              </div>
+              </div> 
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <button class="carousel-control-prev rounded-circle my-auto" type="button" style="height:5vh; width:5vh; background-color: #9e9e9ea1;" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <button class="carousel-control-next rounded-circle my-auto" type="button" style="height:5vh; width:5vh; background-color: #9e9e9ea1;" data-bs-target="#carouselExampleDark" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -178,49 +170,91 @@
       </div>
     </div>  
   </div>  
-
-  <!--  /popular catagory -->
+  <!------------------- /popular catagory ---------->
 
   <!-- Ending soon -->
-  <div id="ending_soon" class="container-lg p-0">
-    <h5 class="text px-3 pb-3">Ending Soon</h5>
+  <div id="ending_soon" class="items container my-5">
+    <div class="text d-flex justify-content-between">
+      <h5 class="text px-3 pb-3">Ending Soon</h5>
+      <a class="link-secondary link-underline-opacity-0" href="#">
+        <p class="text px-3 pb-3">See More</p>
+      </a>
+    </div>
     <div id="carouselExample" class="carousel carousel-dark slide">
-
-      <div class="container-fluid carousel-inner p-0 ms-0">
-
+      <div class="carousel-inner">
         <div class="carousel-item active">
-
-          <div class="container-lg d-flex grid gap-3">
-
-            <!-- Items 1-->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0 ">
-                  <img src="image/14.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body">
-                  <h5 class="card-title ">Special title treatment</h5>
-                  <p class="card-text">Current Bid</p>
-                  <span class="currentBid">5000$ </span>
-                  <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
+          <div class="cards-wrapper">
+            <!-- 1 -->
+            <div class="container border border-0 card p-0 mx-2" id="postId">
+              <div class="container card-header border border-0">
+                <img src="image/love.jpg" class="img-fluid card-img-top" style="height:18rem;" alt="...">
+              </div>                    
+              <div class="img_card card-body">
+                <h5 class="card-title ">Special title treatment</h5>
+                <p class="card-text">Current Bid</p>
+                <span class="currentBid">5000$ </span>
+                <p class="date_text text-body-secondary mt-1">2 days left</p>
+                <div class="rating">
+                  <button class="rate" id="1">
+                    <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
+                  </button>
+                  <button class="rate" id="2">
+                    <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
+                  </button>
+                  <span class="count heart_count ms-1" value="0"></span>
+                </div> 
               </div>
-           
-            <!--  -->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/13.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
+          </div>
+          <div class="container card d-none border border-0 d-md-block p-0 mx-2">
+            <div class="container card-header border border-0">
+              <img src="image/mind.jpg" class="img-fluid card-img-top" style="height:18rem;" alt="...">
+            </div>
+            <div class="img_card card-body">
+              <h5 class="card-title ">Special title treatment</h5>
+              <p class="card-text">Current Bid</p>
+              <span class="currentBid">5000$ </span>
+              <p class="date_text text-body-secondary mt-1">2 days left</p>
+              <div class="rating">
+                <button class="rate" id="3">
+                  <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
+                </button>
+                <button class="rate" id="4">
+                  <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
+                </button>
+                <span class="heart_count ms-1">19</span>
+              </div> 
+            </div>
+          </div>
+          <div class="container card d-none border border-0 d-md-block p-0 mx-2">
+            <div class="container card-header border border-0">
+              <img src="image/12.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
+            </div>                 
+            <div class="img_card card-body">
+              <h5 class="card-title ">Special title treatment</h5>
+              <p class="card-text">Current Bid</p>
+              <span class="currentBid">5000$ </span>
+              <p class="date_text text-body-secondary mt-1">2 days left</p>
+              <div class="rating">
+                <button class="rate" onclick="reactBefore()">
+                  <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
+                </button>
+                <button class="rate" onclick="reactAfter()">
+                  <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
+                </button>
+                <span class="heart_count ms-1">19</span>
+              </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cards-wrapper">
+            <div class="container-sm card border border-0 p-0 mx-2">
+              <div class="container-sm card-header border border-0">
+                <img src="image/11.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
+              </div>                  
+              <div class="img_card card-body">
+                <h5 class="card-title ">Special title treatment</h5>
                 <p class="card-text">Current Bid</p>
                 <span class="currentBid">5000$ </span>
                 <p class="date_text text-body-secondary mt-1">2 days left</p>
@@ -234,297 +268,185 @@
                   <span class="heart_count ms-1">19</span>
                 </div> 
               </div>
-              </div>
-           
-            <!--  -->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/14.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
+            </div>
+            <div class="container-sm card d-none d-md-block border border-0 p-0 mx-2">
+              <div class="container-sm card-header border border-0">
+                <img src="image/10.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
+              </div>                  
+              <div class="img_card card-body">
+                <h5 class="card-title ">Special title treatment</h5>
                 <p class="card-text">Current Bid</p>
                 <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
+                <p class="date_text text-body-secondary mt-1">2 days left</p>
+                <div class="rating">
+                  <button class="rate" onclick="reactBefore()">
+                    <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
+                  </button>
+                  <button class="rate" onclick="reactAfter()">
+                    <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
+                  </button>
+                  <span class="heart_count ms-1">19</span>
+                </div> 
               </div>
-           
-            <!--  -->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/121.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
+            </div>
+            <div class="container-sm card d-none d-md-block border border-0 p-0 mx-2">
+              <div class="container-sm card-header border border-0">
+                <img src="image/15.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
+              </div>                  
+              <div class="img_card card-body">
+                <h5 class="card-title ">Special title treatment</h5>
                 <p class="card-text">Current Bid</p>
                 <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
+                <p class="date_text text-body-secondary mt-1">2 days left</p>
+                <div class="rating">
+                  <button class="rate" onclick="reactBefore()">
+                    <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
+                  </button>
+                  <button class="rate" onclick="reactAfter()">
+                    <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
+                  </button>
+                  <span class="heart_count ms-1">19</span>
+                </div> 
               </div>
-           
+            </div>
           </div>
         </div>
         <div class="carousel-item">
-
-          <div class="container-lg d-flex grid gap-3">
-
-            <!-- Items 1-->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/6.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
+          <div class="cards-wrapper">
+            <div class="container-sm card border border-0 p-0 mx-2">
+              <div class="container-sm card-header border border-0">
+                <img src="image/110.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
+              </div>                 
+              <div class="img_card card-body">
+                <h5 class="card-title ">Special title treatment</h5>
                 <p class="card-text">Current Bid</p>
                 <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
+                <p class="date_text text-body-secondary mt-1">2 days left</p>
+                <div class="rating">
+                  <button class="rate" onclick="reactBefore()">
+                    <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
+                  </button>
+                  <button class="rate" onclick="reactAfter()">
+                    <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
+                  </button>
+                  <span class="heart_count ms-1">19</span>
+                </div> 
               </div>
-           
-            <!--  -->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/2.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
+            </div>
+            <div class="container-sm card d-none d-md-block border border-0 p-0 mx-2">
+              <div class="container-sm card-header border border-0">
+                <img src="image/13.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
+              </div>                  
+              <div class="img_card card-body">
+                <h5 class="card-title ">Special title treatment</h5>
                 <p class="card-text">Current Bid</p>
                 <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
+                <p class="date_text text-body-secondary mt-1">2 days left</p>
+                <div class="rating">
+                  <button class="rate" onclick="reactBefore()">
+                    <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
+                  </button>
+                  <button class="rate" onclick="reactAfter()">
+                    <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
+                  </button>
+                  <span class="heart_count ms-1">19</span>
+                </div> 
               </div>
-           
-            <!--  -->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/2.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
+            </div>
+            <div class="container-sm card d-none d-md-block border border-0 p-0 mx-2">
+              <div class="container-sm card-header border border-0">
+                <img src="image/15.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
+              </div>                  
+              <div class="img_card card-body">
+                <h5 class="card-title ">Special title treatment</h5>
                 <p class="card-text">Current Bid</p>
                 <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
+                <p class="date_text text-body-secondary mt-1">2 days left</p>
+                <div class="rating">
+                  <button class="rate" onclick="reactBefore()">
+                    <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
+                  </button>
+                  <button class="rate" onclick="reactAfter()">
+                    <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
+                  </button>
+                  <span class="heart_count ms-1">19</span>
+                </div> 
               </div>
-           
-            <!--  -->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/2.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">Current Bid</p>
-                <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
-              </div>
-           
+            </div>
           </div>
-
-        </div>
-        <div class="carousel-item">
-
-          <div class="container-lg d-flex grid gap-3">
-
-            <!-- Items 1-->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/2.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">Current Bid</p>
-                <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
-              </div>
-           
-            <!--  -->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/2.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">Current Bid</p>
-                <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
-              </div>
-           
-            <!--  -->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/2.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">Current Bid</p>
-                <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
-              </div>
-           
-            <!--  -->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/2.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">Current Bid</p>
-                <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
-              </div>
-           
-          </div>        
-        </div>
-
+        </div>      
+        <button class="carousel-control-prev rounded-circle " type="button" style="height:5vh; width:5vh; top:30%;background-color: #9e9e9ea1;" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next rounded-circle " type="button" style="height:5vh; width:5vh; top:30%;background-color: #9e9e9ea1;" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
   </div>
-  <!-- /Ending Soon -->              
+  <!---------------- /Ending Soon ------------------->              
 
   <!-- Lasted -->
-  <div id="lastest" class="container-lg mt-3">
-    <h5 class="text p-3">Lasted Post</h5>
-    <div id="carouselExample" class="carousel carousel-dark slide ">
-
-      <div class="container-lg carousel-inner p-0 ms-0">
-
+  <div id="lasted" class="items container">
+    <div class="text d-flex justify-content-between">
+      <h5 class="text px-3 pb-3">Ending Soon</h5>
+      <a class="link-secondary link-underline-opacity-0" href="seemore.html">
+        <p class="text px-3 pb-3 te">See More</p>
+      </a>
+    </div>
+    <div id="carouselExample1" class="carousel carousel-dark slide">
+      <div class="carousel-inner">
         <div class="carousel-item active">
-
-          <div class="container-lg d-flex grid gap-3">
-
-            <!-- Items 1-->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/2.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body">
-                  <h5 class="card-title ">Special title treatment</h5>
-                  <p class="card-text">Current Bid</p>
-                  <span class="currentBid">5000$ </span>
-                  <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
+          <div class="cards-wrapper">
+            <!-- 1 -->
+            <div class="container border border-0 card p-0 mx-2" id="postId">
+              <div class="container card-header border border-0">
+                <img src="image/14.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
+              </div>                    
+              <div class="img_card card-body">
+                <h5 class="card-title ">Special title treatment</h5>
+                <p class="card-text">Current Bid</p>
+                <span class="currentBid">5000$ </span>
+                <p class="date_text text-body-secondary mt-1">2 days left</p>
+                <div class="rating">
+                  <button class="rate" id="1">
+                    <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
+                  </button>
+                  <button class="rate" id="2">
+                    <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
+                  </button>
+                  <span class="count heart_count ms-1" value="0"></span>
+                </div> 
               </div>
-           
-            <!--  -->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/13.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
+            </div>
+            <div class="container card d-none border border-0 d-md-block p-0 mx-2">
+              <div class="container card-header border border-0">
+                <img src="image/13.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
+              </div>
+              <div class="img_card card-body">
+                <h5 class="card-title ">Special title treatment</h5>
+                <p class="card-text">Current Bid</p>
+                <span class="currentBid">5000$ </span>
+                <p class="date_text text-body-secondary mt-1">2 days left</p>
+                <div class="rating">
+                  <button class="rate" id="3">
+                    <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
+                  </button>
+                  <button class="rate" id="4">
+                    <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
+                  </button>
+                  <span class="heart_count ms-1">19</span>
+                </div> 
+              </div>
+            </div>
+            <div class="container card d-none border border-0 d-md-block p-0 mx-2">
+              <div class="container card-header border border-0">
+                <img src="image/12.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
+              </div>                 
+              <div class="img_card card-body">
+                <h5 class="card-title ">Special title treatment</h5>
                 <p class="card-text">Current Bid</p>
                 <span class="currentBid">5000$ </span>
                 <p class="date_text text-body-secondary mt-1">2 days left</p>
@@ -538,274 +460,205 @@
                   <span class="heart_count ms-1">19</span>
                 </div> 
               </div>
-              </div>
-           
-            <!--  -->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/14.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">Current Bid</p>
-                <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
-              </div>
-           
-            <!--  -->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/121.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">Current Bid</p>
-                <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
-              </div>
-           
+            </div>
           </div>
         </div>
         <div class="carousel-item">
-
-          <div class="container-lg d-flex grid gap-3">
-
-            <!-- Items 1-->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/6.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
+          <div class="cards-wrapper">
+            <div class="container-sm card border border-0 p-0 mx-2">
+              <div class="container-sm card-header border border-0">
+                <img src="image/11.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
+              </div>                  
+              <div class="img_card card-body">
+                <h5 class="card-title ">Special title treatment</h5>
                 <p class="card-text">Current Bid</p>
                 <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
+                <p class="date_text text-body-secondary mt-1">2 days left</p>
+                <div class="rating">
+                  <button class="rate" onclick="reactBefore()">
+                    <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
+                  </button>
+                  <button class="rate" onclick="reactAfter()">
+                    <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
+                  </button>
+                  <span class="heart_count ms-1">19</span>
+                </div> 
               </div>
-           
-            <!--  -->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/2.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
+            </div>
+            <div class="container-sm card d-none d-md-block border border-0 p-0 mx-2">
+              <div class="container-sm card-header border border-0">
+                <img src="image/10.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
+              </div>                  
+              <div class="img_card card-body">
+                <h5 class="card-title ">Special title treatment</h5>
                 <p class="card-text">Current Bid</p>
                 <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
+                <p class="date_text text-body-secondary mt-1">2 days left</p>
+                <div class="rating">
+                  <button class="rate" onclick="reactBefore()">
+                    <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
+                  </button>
+                  <button class="rate" onclick="reactAfter()">
+                    <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
+                  </button>
+                  <span class="heart_count ms-1">19</span>
+                </div> 
               </div>
-           
-            <!--  -->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/2.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
+            </div>
+            <div class="container-sm card d-none d-md-block border border-0 p-0 mx-2">
+              <div class="container-sm card-header border border-0">
+                <img src="image/15.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
+              </div>                  
+              <div class="img_card card-body">
+                <h5 class="card-title ">Special title treatment</h5>
                 <p class="card-text">Current Bid</p>
                 <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
+                <p class="date_text text-body-secondary mt-1">2 days left</p>
+                <div class="rating">
+                  <button class="rate" onclick="reactBefore()">
+                    <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
+                  </button>
+                  <button class="rate" onclick="reactAfter()">
+                    <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
+                  </button>
+                  <span class="heart_count ms-1">19</span>
+                </div> 
               </div>
-           
-            <!--  -->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/2.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">Current Bid</p>
-                <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
-              </div>
-           
+            </div>
           </div>
-
         </div>
         <div class="carousel-item">
-
-          <div class="container-lg d-flex grid gap-3">
-
-            <!-- Items 1-->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/2.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
+          <div class="cards-wrapper">
+            <div class="container-sm card border border-0 p-0 mx-2">
+              <div class="container-sm card-header border border-0">
+                <img src="image/110.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
+              </div>                 
+              <div class="img_card card-body">
+                <h5 class="card-title ">Special title treatment</h5>
                 <p class="card-text">Current Bid</p>
                 <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
+                <p class="date_text text-body-secondary mt-1">2 days left</p>
+                <div class="rating">
+                  <button class="rate" onclick="reactBefore()">
+                    <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
+                  </button>
+                  <button class="rate" onclick="reactAfter()">
+                    <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
+                  </button>
+                  <span class="heart_count ms-1">19</span>
+                </div> 
               </div>
-           
-            <!--  -->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/2.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
+            </div>
+            <div class="container-sm card d-none d-md-block border border-0 p-0 mx-2">
+              <div class="container-sm card-header border border-0">
+                <img src="image/13.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
+              </div>                  
+              <div class="img_card card-body">
+                <h5 class="card-title ">Special title treatment</h5>
                 <p class="card-text">Current Bid</p>
                 <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
+                <p class="date_text text-body-secondary mt-1">2 days left</p>
+                <div class="rating">
+                  <button class="rate" onclick="reactBefore()">
+                    <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
+                  </button>
+                  <button class="rate" onclick="reactAfter()">
+                    <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
+                  </button>
+                  <span class="heart_count ms-1">19</span>
+                </div> 
               </div>
-           
-            <!--  -->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/2.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
+            </div>
+            <div class="container-sm card d-none d-md-block border border-0 p-0 mx-2">
+              <div class="container-sm card-header border border-0">
+                <img src="image/15.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
+              </div>                  
+              <div class="img_card card-body">
+                <h5 class="card-title ">Special title treatment</h5>
                 <p class="card-text">Current Bid</p>
                 <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
+                <p class="date_text text-body-secondary mt-1">2 days left</p>
+                <div class="rating">
+                  <button class="rate" onclick="reactBefore()">
+                    <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
+                  </button>
+                  <button class="rate" onclick="reactAfter()">
+                    <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
+                  </button>
+                  <span class="heart_count ms-1">19</span>
+                </div> 
               </div>
-           
-            <!--  -->
-              <div class="container-sm card border border-0 p-0">
-                <div class="container-sm card-header border border-0">
-                  <img src="image/2.png" class="img-fluid card-img-top" style="height:18rem;" alt="...">
-                </div>
-                <div class="img_card card-body ">
-                  <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">Current Bid</p>
-                <span class="currentBid">5000$ </span>
-                   <p class="date_text text-body-secondary mt-1">2 days left</p>
-                  <div class="rating">
-                    <button class="rate" onclick="reactBefore()">
-                      <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-                    </button>
-                    <button class="rate" onclick="reactAfter()">
-                      <i id="reactAfter" class="fa-solid fa-heart" style="color: #a80000;"></i>
-                    </button>
-                    <span class="heart_count ms-1">19</span>
-                  </div> 
-                </div>
-              </div>
-           
-          </div>        
-        </div>
-
+            </div>
+          </div>
+        </div>      
+        <button class="carousel-control-prev rounded-circle " type="button" style="height:5vh; width:5vh; top:30%;background-color: #9e9e9ea1;" data-bs-target="#carouselExample1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next rounded-circle " type="button" style="height:5vh; width:5vh; top:30%;background-color: #9e9e9ea1;" data-bs-target="#carouselExample1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
   </div>
-  
-  <!-- /Lasted -->
+  <!----------------- /Lasted --------------------------->
+
+  <!-- Popular -->
+
+  <!------------------/Popular---------------------->
 </body>
 <!-- Script -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script>
       let after = document.getElementById('reactAfter');
       let before = document.getElementById('reactBefore');
+      let count = document.querySelector(".count");
+      let rate = document.querySelector(".rate");
 
-      function reactBefore(){
-        after.style.display = "block";
-        before.style.display = "none";
-      }
-      function reactAfter(){
-        after.style.display ="none";
-        before.style.display = "block";
-      }
+      let num = 0 ;
+      const postId =''+ new Date().getTime();
+      console.log(postId);
+
+      // function reactBefore(e){
+        rate.addEventListener("click",function(e){
+          const edit_btn = e.target; 
+          const editID =  edit_btn.id;  
+          after.style.display = "block";
+          before.style.display = "none";
+          num+=1;
+          // document.innerHTML = "";
+          console.log(edit_btn);
+          console.log("num"+num);
+
+
+        })
+        // rate.addEventListener("click", function(e){
+        //   const edit = e.target; 
+        //   const editI =  edit.id;  
+        //   after.style.display ="none";
+        //   before.style.display = "block";
+        //   num-=1;
+        //   console.log(editI);
+        //   console.log(num);
+
+
+        // })
+    
+      // function reactAfter(){
+      //   after.style.display ="none";
+      //   before.style.display = "block";
+      //   num-=1;
+      // }
 
 
 </script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
 
 </html>

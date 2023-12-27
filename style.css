@@ -7,20 +7,42 @@
 }
 .logo_name{
     font-size: xx-large;
-    font-family:'Rubik Moonrocks', sans-serif;
-    
+    font-family:'Rubik Moonrocks', sans-serif;   
 }
+.logo{
+    width: 40px;
+    height: 40px;
+  }
+.search .btn{
+    position:absolute;
+    border:none;
+}
+.cata{
+    display:none;
+    margin: 0 10px 0 30px;
+}
+.form-control{
+  width: 300px;
+}
+ 
 .header{
-    height:70vh;
     margin-top:10rem;
-}
-.popular_image{
-    display: flex;
-    margin-bottom: 0%;
+    margin-bottom:50px;
 }
 .notice_board{
     font-family:'Rubik Moonrocks', sans-serif;
 }
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.card{
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 0;
+    border: none;
+}
+
 /* HeatRate */
 .img_card{
     position: relative;
@@ -28,11 +50,15 @@
 .rating{
     position: absolute;
     top:50%;
-    left:80%;  
+    left:80%; 
+    display: flex;
+    height: 15px; 
 }
 .rating .rate{
     background: none;
     padding: 0%;
+    border: 0;
+    cursor: pointer;
 }
 .rating .rate i{
     display: block;
@@ -50,14 +76,96 @@
 .detail_page{
     height:10rem;
 }
+
+@media (max-width:991px) {
+  .form-control{
+    width:150px;
+  }
+  .logo_name{
+    font-size:30px;
+  }
+  .logo{
+    width: 37px;
+    height: 37px;
+  }
+  .user{
+    width: 37px;
+    height: 37px;
+  }
+  * {
+    font-size: medium;
+  }
+
+}
+@media (max-width:768px) {
+  .card img {
+    height : 12em;
+  }
+  .form-control{
+    width:120px;
+  }
+  .logo_name{
+    display: none;
+    font-size:20px;
+  }
+  * {
+    font-size: 12px;
+  }
+  .logo{
+    margin-left:20px;
+    width: 30px;
+    height: 30px;
+  }
+  .user{
+    width: 30px;
+    height: 30px;
+  }
+  .noti{
+    width: 20px;
+    height: 20px;
+  }
+  .coin{
+    width: 20px;
+    height: 20px;
+  }
+  .search_png{
+    width: 20px;
+    height: 20px;
+  }
+  .catago{
+    display: none;
+  }
+  .cata{
+    display: block ;
+  }
+  .coin_num{
+    padding-top:5px;
+  }
+}
+/* @media (max-width:518px) {
+ 
+  .form-control{
+    width:100px;
+  }
+  .logo{
+    width: 30px;
+    height: 30px;
+  }
+  .user{
+    width: 30px;
+    height: 30px;
+  }
+  .coin{
+    width: 20px;
+    height: 20px;
+  }
+
+} */
 /* detail */
 
-.hero{
-    /* width: 100%; */
-}
-.row{
-    /* width: 90%; */
-    height: 100vh;
+
+/* .row{
+   
     margin: auto;
     display: flex;
     align-items: center;
@@ -109,12 +217,7 @@ h2{
     font-weight: bold;
     padding-top: 10px;
 }
-input{
-    width: 30px;
-    border: 1px solid #ccc;
-    font-weight: bold;
-    text-align: center;
-}
+
 button{
     color: #fff;
     font-size: 15px;
@@ -131,7 +234,7 @@ button .fa{
 }
 .related{
     width: 90%;
-    margin: 0 auto 40px;
+    margin: 0 auto 30px;
 }
 .related .row{
     width: 100%;
@@ -141,9 +244,9 @@ button .fa{
     flex-basis: 22%;
     height: 100%;
 }
-.items img{
+/* .items img{
     width: 100%;
-}
+} 
 .details{
     margin-top: 20px;
 }
@@ -153,10 +256,4 @@ button .fa{
 }
 .details .rating{
     margin: 10px 0;
-}
-
-
-/* /detail */
-
-
-
+} */
