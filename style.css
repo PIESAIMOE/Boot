@@ -26,7 +26,7 @@
 }
  
 .header{
-    margin-top:10rem;
+    margin-top:9rem;
     margin-bottom:50px;
 }
 .notice_board{
@@ -43,7 +43,37 @@
     border: none;
 }
 
-/* HeatRate */
+/* ? poloularBox */
+
+.polpuimgBox{
+  height:600px;
+  padding:0%;
+
+}
+.polpular_img{
+  height:100%;
+  width:100%;
+
+}
+.adsBox {
+  height: 300px;
+  padding: 0%;
+}
+.ads_img{
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+  border:none;
+  margin:0%;
+  border-radius: 0%;
+  
+}
+
+.coin{
+  border: none;
+}
+/* * HeatRate */
+
 .img_card{
     position: relative;
 }
@@ -52,17 +82,16 @@
     top:50%;
     left:80%; 
     display: flex;
-    height: 15px; 
+    cursor: pointer;
 }
 .rating .rate{
-    background: none;
-    padding: 0%;
-    border: 0;
-    cursor: pointer;
+  background: none;
+  padding:3px 2px;
+  border: 0;
+  
 }
 .rating .rate i{
     display: block;
-    cursor: pointer;
     font-size: 20px;
     transition: 0.2s ease;
 }
@@ -77,9 +106,219 @@
     height:10rem;
 }
 
+/**detail */
+
+.imagebox{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  padding: 0%;
+  margin: 0%;
+}
+
+.thumbnail{
+  object-fit: cover;
+  max-width: 100px;
+  max-height: 100px;
+  cursor: pointer;
+  margin:1px 0px;
+  opacity: 0.5;
+
+}
+.thumbnail:hover{
+	opacity:1;
+}
+
+.active_thumbnail{
+	opacity: 1;
+  border: 2px solid rgb(151, 146, 146);
+}
+
+.product{
+  width:100px;
+  margin: auto;
+} 
+.detail_title{
+  text-transform: uppercase;
+  font-family:'Cinzel', serif;
+}
+.rateForm{
+  width:80px;
+  cursor: pointer;
+
+}
+.rateForm .rate i{
+  display:block;
+  font-size: 20px;
+  transition: 0.2s ease;
+}
+.content{
+  padding-right:30px;
+}
+.ulList{
+  list-style:none;
+  width:50%;
+  height:300px;
+  padding:0;
+
+}
+.ulList li{
+  width:100%;
+  margin:50px 0px;
+}
+.ulList li>p {
+  text-transform: uppercase;
+  font-size:14px;
+  font-family:'Cinzel', serif;
+ 
+}
+.bidBox p {
+  text-transform: uppercase;
+  font-size:14px;
+  font-family:'Cinzel', serif;
+ 
+}
+.review p{
+  font-size:16px;
+  font-weight: bold;
+}
+.review span{
+  font-size:15px;
+  color: rgb(117, 117, 117);
+  font-family:'Cinzel', serif;
+}
+.cmtBox{
+  width:500px;
+  height:50px;
+  border:2px solid black;
+}
+.sentBtn{
+  border-radius:0%;
+  height: 50px;
+}
+.bidForm{
+  height:100%;
+}
+.colseIn span{
+  font-size: larger;
+}
+.bid{
+  width:30px;
+  height:30px;
+}
+.bidBtn{
+  width: 100px;
+  border-radius: 0%;
+  margin:10px 0;
+}
+.bidInput{
+  height: 50px;
+  margin:20px 0px;
+  padding-left:10px;
+}
+.setBid{
+  padding:0 20px;
+  height: 50px;
+  margin:20px 5px;
+  border-radius: 0%;
+  font-family:'Cinzel', serif;
+}
+.table td{
+font-size: small;
+font-weight:bold;
+ border: none;
+ padding-top:0;
+ padding-bottom:0;
+}
+.bidderHour span{
+  font-size: small;
+  }
+.bidCoin span{
+  font-size: small;
+  
+  }
+.dueDate{
+  color: #595b5e;
+}
+.dueDate span{
+  font-weight: bold;
+  font-size: small;
+}
+.bidForm{
+  position:sticky;
+  top:100px;
+}
+/* ?Searching */
+.img_box{
+  height:300px;
+}
+.search_img{
+  max-height:300px;
+}
+.startBid{
+  color: #595b5e;
+  font-size:15px;
+  font-weight:bold;
+  font-family:'Cinzel', serif;
+}
+/** catagory.*/
+
+.cata-img{
+  height:70%;
+  margin-top:20px;
+  padding-right:15px;
+}
+.cata-img img{
+  height:100%;
+}
+
+.cata_card{
+  height:150px;
+}
+/* trem */
+
+
+.termBox{
+  margin-top:100px;
+
+}
+.followUs i{
+  width: 50px;
+  height: 50px;
+}
+.explore_ul{
+  line-height:3;
+  padding-bottom: 100px;
+
+}
+.explore_ul a{
+ list-style: none;
+ color: rgb(104, 99, 99);
+ font-size:15px;
+ text-decoration: none;
+
+}
+
+
+/**media  */
+@media (max-width:1200px) {
+  .form-control{
+    width:200px;
+  }
+  .logo_name{
+    font-size:30px;
+  }
+
+}
+
 @media (max-width:991px) {
   .form-control{
     width:150px;
+  }
+  .logo_name{
+    display: none;
+    font-size:20px;
   }
   .logo_name{
     font-size:30px;
@@ -95,6 +334,15 @@
   * {
     font-size: medium;
   }
+
+  .thumbnail{
+    max-width: 50px;
+    max-height: 50px;
+    
+  }
+  .product{
+    width:50px;
+  } 
 
 }
 @media (max-width:768px) {
@@ -141,119 +389,13 @@
   .coin_num{
     padding-top:5px;
   }
-}
-/* @media (max-width:518px) {
- 
-  .form-control{
-    width:100px;
+  .thumbnail{
+    max-width: 30px;
+    max-height: 30px;
+    
   }
-  .logo{
-    width: 30px;
-    height: 30px;
-  }
-  .user{
-    width: 30px;
-    height: 30px;
-  }
-  .coin{
-    width: 20px;
-    height: 20px;
-  }
-
-} */
-/* detail */
-
-
-/* .row{
-   
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.col{
-    flex-basis: 45%;
-}
-.slider{
-    display: flex;
-}
-.product{
-    max-height:30vh;
-    cursor: pointer;
-    opacity: 0.8;
+  .product{
+    width:30px;
+  } 
 }
 
-.product img:hover{
-    opacity: 1;
-}
-.preview img{
-    height: 100%;
-}
-p{
-    margin-bottom: 20px;
-}
-.brand{
-    background: #008000;
-    width: fit-content;
-    color: #fff;
-    font-size: 12px;
-    padding: 2px 5px;
-}
-h2{
-    font-size: 45px;
-    color: #555;
-    margin-bottom: 20px;
-}
-.rating{
-    display: flex;
-    height: 15px;
-}
-.rating .fa{
-    color: #008000;
-}
-.price{
-    color: #fe980f;
-    font-size: 26px;
-    font-weight: bold;
-    padding-top: 10px;
-}
-
-button{
-    color: #fff;
-    font-size: 15px;
-    outline: none;
-    border: 0;
-    border-radius: 5px;
-    background: #fe980f;
-    padding: 10px 15px;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-button .fa{
-    margin-right: 10px;
-}
-.related{
-    width: 90%;
-    margin: 0 auto 30px;
-}
-.related .row{
-    width: 100%;
-    height: auto;
-}
-.columns{
-    flex-basis: 22%;
-    height: 100%;
-}
-/* .items img{
-    width: 100%;
-} 
-.details{
-    margin-top: 20px;
-}
-.details p{
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-.details .rating{
-    margin: 10px 0;
-} */

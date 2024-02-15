@@ -1,22 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boot</title>
     <link rel="stylesheet" type="text/css" href="bs\css\bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet"  href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN">
     
+
+  
+  <style>
+
+.magnify {
+    /* position: absolute; */
+    display: inline-block;
+}
+/* .magnify .magnified {
+  display: block;
+  z-index: 10;
+  margin: auto;
+  width: 600px;
+  height: 360px;
+  border: 5px solid #fff;
+} */
+.magnify .magnifier {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  z-index: 20;
+  border: 1px solid rgb(0, 0, 0);
+  background-size: 1000%;
+  background-repeat: no-repeat;
+  margin-left: -100px !important;
+  margin-top: -100px !important;
+  pointer-events: none;
+}
+
+  </style>
 </head>
 <body>
+
+
+    <div class="header">
+        <div class="row">
+            <div class="col px-0">                
+                    <!-- <div class="product">
+                        <img src="image/110.png" class="thumbnail active" alt="..." onclick="clickme(this)">
+                        <img src="image/10.png" class="thumbnail " alt="..." onclick="clickme(this)">
+                        <img src="image/11.png" class="thumbnail " alt="..." onclick="clickme(this)">
+                        <img src="image/15.png" class="thumbnail " alt="..." onclick="clickme(this)">
+                        <img src="image/18.png" class="thumbnail " alt="..." onclick="clickme(this)">
+                        <img src="image/16.png" class="thumbnail " alt="..." onclick="clickme(this)">
+                    </div> -->
+                    <div class="product">
+                      <img class="thumbnail active" src="image/110.png">
+                      <img class="thumbnail" src="image/11.png">
+                      <img class="thumbnail" src="image/12.png">
+                      <img class="thumbnail" src="image/13.png">
+                      <img class="thumbnail" src="image/14.png">
+                      <img class="thumbnail" src="image/15.png">
+                    
+                    </div>
+
+
+            </div>
+            <div class="col-5 px-0">
+                <div class="magnify">
+                    <div class="magnifier" id="magnifier" style="background-image:url(image/110.png);"></div>
+                    <div class="magnified">
+                        <img class="imagebox img-fluid" src="image/110.png" id="imagebox" alt="">
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-5 px-3 mx-0">
+
+                <div class="content">
+
+                    <h2 class="text fw-semibold fs-1">Black Quirky Print Empire Dress</h2>
+                    <p class="price">Brand: Varanga</p>
+                    <p class="Catagory">Catagory: Clothing</p>
+                    <span>Item's  Description:</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequatur quaerat temporibus rem. Fugit consequuntur explicabo consequatur eaque quaerat est labore cumque voluptatibus error, expedita aliquid nemo dignissimos, blanditiis iusto. Amet corporis dolor sunt dolores iste quod deleniti, a voluptas qui quisquam voluptatem omnis, repellat eum minus veniam dolore sit nisi exercitationem commodi perspiciatis, nobis et error nemo ducimus! Molestiae dicta, nihil reprehenderit mollitia quibusdam, assumenda esse magni numquam quo eum facere animi, nostrum totam iusto aliquid vero saepe similique dolor quidem fuga recusandae harum omnis dolorum! Ex cupiditate magni recusandae in alias sint quidem reprehenderit, aliquid distinctio? Recusandae, maiores!</p>
+                    <button type="button ">
+                      <img class="bid" src="image/bid2.png" id="bid" alt="">BID</button>
+                </div>
+
+            </div>
+        </div>
+
+
+  <p class="output"></p>
+ 
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script>
+
+    let thumbnails = document.getElementsByClassName('thumbnail')
+
+    let activeImages = document.getElementsByClassName('active')
+
+    let zoomImages = document.getElementsByClassName('magnifier')
+
+
+
+    for (var i=0; i < thumbnails.length; i++){
+
+    thumbnails[i].addEventListener('click', function(){
+        console.log(activeImages)
+        
+        if (activeImages.length > 0){
+        activeImages[0].classList.remove('active') 
+        }
+        
+     
+        
+
+        this.classList.add('active')
+        document.getElementById('imagebox').src = this.src
+
+
+        // this.classList.add('magnifier')
+
+        document.getElementById('magnifier').src = this.src
+
+    })
+    }
+
+
+
+// ####################
+
+
+    $(".magnified").hover(function(e){
+  //Store position & dimension information of image
+  var imgPosition = $(".magnify").position(),
+      imgHeight = $(".magnified").height(),
+      imgWidth = $(".magnified").width();
   
-<!---nav--->
-
+  //Show mangifier on hover
+  $(".magnifier").show();
+  
+  //While the mouse is moving and over the image move the magnifier and magnified image
+  $(this).mousemove(function(e){
+    //Store position of mouse as it moves and calculate its position in percent
+    var posX = e.pageX - imgPosition.left,
+        posY = e.pageY - imgPosition.top,
+        percX = (posX / imgWidth) * 100,
+        percY = (posY / imgHeight) * 100,
+        perc = percX + "% " + percY + "%";
     
-</body>
-<!-- Script -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    //Change CSS of magnifier, move it to mouse location and change background position based on the percentages stored.
+    $(".magnifier").css({
+      top:posY,
+      left:posX,
+      backgroundPosition: perc
+    });
+  });
+}, function(){
+  //Hide the magnifier when mouse is no longer hovering over image.
+  $(".magnifier").hide();
+});
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+</body>
 </html>
