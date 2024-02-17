@@ -42,6 +42,10 @@
     border-radius: 0;
     border: none;
 }
+.currentBid{
+  font-size: 25px;
+  
+}
 
 /* ? poloularBox */
 
@@ -72,6 +76,8 @@
 .coin{
   border: none;
 }
+
+
 /* * HeatRate */
 
 .img_card{
@@ -106,6 +112,32 @@
     height:10rem;
 }
 
+/* *trem */
+.followUs{
+  display: block;
+  font-size: 30px;
+}
+
+.termBox{
+  margin-top:100px;
+}
+.termBox h3{
+  font-family:'Cinzel', serif;
+}
+.explore_ul{
+  line-height:3;
+  padding-bottom: 100px;
+
+}
+.explore_ul a{
+ list-style: none;
+ color: rgb(104, 99, 99);
+ font-size:15px;
+ text-decoration: none;
+
+}
+
+
 /**detail */
 
 .imagebox{
@@ -132,7 +164,7 @@
 
 .active_thumbnail{
 	opacity: 1;
-  border: 2px solid rgb(151, 146, 146);
+  border: 2px solid rgb(61, 238, 8);
 }
 
 .product{
@@ -276,29 +308,6 @@ font-weight:bold;
 .cata_card{
   height:150px;
 }
-/* trem */
-
-
-.termBox{
-  margin-top:100px;
-
-}
-.followUs i{
-  width: 50px;
-  height: 50px;
-}
-.explore_ul{
-  line-height:3;
-  padding-bottom: 100px;
-
-}
-.explore_ul a{
- list-style: none;
- color: rgb(104, 99, 99);
- font-size:15px;
- text-decoration: none;
-
-}
 
 
 /**media  */
@@ -307,12 +316,19 @@ font-weight:bold;
     width:200px;
   }
   .logo_name{
-    font-size:30px;
+    font-size:25px;
   }
-
+  .logo{
+    width: 37px;
+    height: 37px;
+  }
 }
 
 @media (max-width:991px) {
+  * {
+    font-size: small;
+  }
+
   .form-control{
     width:150px;
   }
@@ -320,21 +336,17 @@ font-weight:bold;
     display: none;
     font-size:20px;
   }
-  .logo_name{
-    font-size:30px;
-  }
-  .logo{
-    width: 37px;
-    height: 37px;
-  }
   .user{
     width: 37px;
     height: 37px;
   }
-  * {
-    font-size: medium;
+  .polpuimgBox{
+    height:300px;
   }
-
+  .adsBox {
+    height: 150px;
+    padding: 0%;
+  }
   .thumbnail{
     max-width: 50px;
     max-height: 50px;
@@ -343,12 +355,28 @@ font-weight:bold;
   .product{
     width:50px;
   } 
+  .coin{
+    width: 20px;
+    height: 20px;
+  }
+  .currentBid{
+    font-size: 20px;
+  }
+  .post-coin{
+    width: 20px;
+    height: 20px;
+  }
+  .count{
+    font-size:medium;
+  }
+  .logo{
+    width: 30px;
+    height: 30px;
+  }
 
 }
 @media (max-width:768px) {
-  .card img {
-    height : 12em;
-  }
+
   .form-control{
     width:120px;
   }
@@ -356,23 +384,15 @@ font-weight:bold;
     display: none;
     font-size:20px;
   }
-  * {
-    font-size: 12px;
-  }
   .logo{
     margin-left:20px;
-    width: 30px;
-    height: 30px;
   }
   .user{
     width: 30px;
     height: 30px;
   }
+
   .noti{
-    width: 20px;
-    height: 20px;
-  }
-  .coin{
     width: 20px;
     height: 20px;
   }
@@ -397,5 +417,8 @@ font-weight:bold;
   .product{
     width:30px;
   } 
+  .items{
+    font-size: 30px;
+  }
 }
 

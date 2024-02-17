@@ -1,0 +1,8 @@
+.email-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: #b4b4b4;
+  }
