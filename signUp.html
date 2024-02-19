@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>signUp</title>
-    <link rel="stylesheet" type="text/css" href="text.css">
+    <link rel="stylesheet" type="text/css" href="singIn.css">
     <link rel="stylesheet" type="text/css" href="bs\css\bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container shadow p-3 mb-5  rounded position-absolute top-50 start-50 translate-middle" style = "width:50rem;">
         <h1 class="text-center pt-5">Sign Up</h1>
         <form class="row p-5">
+            <!-- *Name -->
             <div class="col-md-6">
               <label for="validationServer01" class="form-label">Name</label>
               <div class="singup_inputfield">
                 <input type="text" class="bg-body-" id="name" placeholder="Enter your name"required>
               </div>
             </div>
-        
+
+            <!-- *Email -->
             <div class="col-md-6">
               <label for="validationServerUsername" class="form-label">Email</label>
               <div class="singup_inputfield">
@@ -28,44 +31,7 @@
                 </div>
             </div>
 
-            <div class="col-md-12 me-5">
-              <label for="validationServer03" class="form-label">Address(.No/Street/Quarters/Township)</label>
-              <div class="singup_inputfield">
-                <input type="text" class="" id="address " aria-describedby="validationServer03Feedback" placeholder=".No/Street/Quarters/Township" required>             
-                <!-- <i class="icon fa-regular fa-circle-check"></i> -->
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <label for="validationServer04" class="form-label">City</label>
-              <div class="singup_inputfield">
-                <input type="text" class="" id="city" placeholder="Enter your city" required>                         
-              </div>
-            </div>   
-
-            <div class="col-md-6">
-              <label for="validationServer05" class="form-label">State/Region</label>
-              <div class="singup_inputfield">
-                <select class="select" id="state"  required>
-                  <option>Choose...</option>
-                  <option value="1">Kachin State</option>
-                  <option value="2">Kayah State</option>
-                  <option value="3">Kayin State</option>
-                  <option value="4">Chin State</option>
-                  <option value="5">Shan State</option>
-                  <option value="6">Mon State</option>
-                  <option value="7">Rakhine State</option>
-                  <option value="8">Yangon Region</option>
-                  <option value="9">Mandalay Region</option>
-                  <option value="10">Ayeyarwady Region</option>
-                  <option value="11">Bago Region</option>
-                  <option value="12">Magwe Region</option>
-                  <option value="13">Sagaing Region</option>
-                  <option value="14">Mandalay Region</option>
-                </select>            
-              </div>
-            </div>
-
+            <!-- *NRC -->
             <div class="col-md-6">
               <label for="validationServer08" class="form-label" >NRC.No</label>
               <div class="singup_inputfield row row-cols-4">
@@ -106,7 +72,39 @@
                 </div>
               </div>
             </div>
-              <!-- -------------------------- -->
+
+            <!-- *Region -->
+            <div class="col-md-6">
+              <label for="validationServer05" class="form-label">State/Region</label>
+              <div class="singup_inputfield">
+                <select id="state" required>
+                  <option>Choose...</option>
+                  <option value="1">Kachin State</option>
+                  <option value="2">Kayah State</option>
+                  <option value="3">Kayin State</option>
+                  <option value="4">Chin State</option>
+                  <option value="5">Shan State</option>
+                  <option value="6">Mon State</option>
+                  <option value="7">Rakhine State</option>
+                  <option value="8">Yangon Region</option>
+                  <option value="9">Mandalay Region</option>
+                  <option value="10">Ayeyarwady Region</option>
+                  <option value="11">Bago Region</option>
+                  <option value="12">Magwe Region</option>
+                  <option value="13">Sagaing Region</option>
+                  <option value="14">Mandalay Region</option>   
+                </select>            
+              </div>
+            </div>
+  
+            <!-- *City -->
+            <div class="col-md-6">
+              <label for="validationServer04" class="form-label">City</label>
+              <div class="singup_inputfield">
+                <input type="text" class="" id="city" placeholder="Enter your city" required>                         
+              </div>
+            </div>   
+            <!-- *PH.NO -->
             <div class="col-md-6 ">
               <label for="validationServer08" class="form-label">Ph.No</label>
               <div class="singup_inputfield input-group flex-nowrap">
@@ -115,7 +113,16 @@
                 <i class="icon fa-regular fa-circle-check"></i>
               </div>       
             </div>
+            
+            <!-- *Address -->
+            <div class="col-md-12 me-5">
+              <label for="validationServer03" class="form-label">Address(.No/Street/Quarters/Township)</label>
+              <div class="singup_inputfield">
+                <input type="text" class="" id="address " aria-describedby="validationServer03Feedback" placeholder=".No/Street/Quarters/Township" required>             
+              </div>
+            </div>
 
+            <!-- *Password -->
             <div class="col-md-6">
               <label for="validationServer07" >Password</label>
               <div class="singup_inputfield">
@@ -123,7 +130,8 @@
                 <span id="error" style="font-size:14px;color: rgb(146, 136, 136);">*contain letter,number& special characher*</span>
               </div>
             </div>
-                      
+             
+            <!-- *Comfirm_Password -->
             <div class="col-md-6">
               <label for="validationServer08">Comfirm Password</label>
               <div class="singup_inputfield">
@@ -131,21 +139,12 @@
                 <i class="icon fa-regular fa-circle-check"></i>
               </div>
             </div>
-
-            <div class="col-12 mt-5" >
-              <div class="form-check">
-                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
-                <label class="form-check-label" for="invalidCheck3">
-                  Agree to terms and conditions
-                </label>
-                <div id="invalidCheck3Feedback" class="invalid-feedback ">
-                  You must agree before submitting.
-                </div>
-              </div>
-            </div>
+            
+            <!-- *Button -->
             <div class="col text-center mt-5">        
               <button class="btn btn-dark px-5" type="submit">Submit</button>
             </div>
+
             <div>      
               <a  href="signIn.html">Sing In</a>
           </div> 
@@ -187,14 +186,14 @@
             phNo.value = phNo.value.replace(regex,"");
 
             if(phNo.value === ""){         
-              return icon[2].style.color = "#b4b4b4"; //normal
+              return icon[1].style.color = "#b4b4b4"; //normal
             }
     
-            if(phNo.value.length == 9){       
-               return icon[2].style.color = "#4bb543";  //green
+            if(phNo.value.length < 10 && phNo.value.length > 5 ){       
+               return icon[1].style.color = "#4bb543";  //green
             }
     
-            icon[2].style.color = "#de0611"; //red
+            icon[1].style.color = "#de0611"; //red
           })
 
           function numberonly(nrcNo){
@@ -221,14 +220,14 @@
            
             
             if(com_pass.value === ""){         
-              return icon[3].style.color = "#b4b4b4"; //normal
+              return icon[2].style.color = "#b4b4b4"; //normal
             }
     
             if( password.value === com_pass.value){       
-               return icon[3].style.color = "#4bb543";  //green
+               return icon[2].style.color = "#4bb543";  //green
             }
     
-            icon[3].style.color = "#de0611";  
+            icon[2].style.color = "#de0611";  
             
           })  
 

@@ -164,7 +164,7 @@
 
 .active_thumbnail{
 	opacity: 1;
-  border: 2px solid rgb(61, 238, 8);
+  border: 2px solid rgb(166, 168, 166);
 }
 
 .product{
@@ -209,7 +209,6 @@
   text-transform: uppercase;
   font-size:14px;
   font-family:'Cinzel', serif;
- 
 }
 .review p{
   font-size:16px;
@@ -220,6 +219,25 @@
   color: rgb(117, 117, 117);
   font-family:'Cinzel', serif;
 }
+.reply_box{
+  font-size:15px;
+}
+.reply_cmt{
+  margin-top:10px;
+  margin-left:50px;
+}
+
+.reply_cmt p{
+  font-size:15px;
+  font-weight: bold;
+  color: rgb(73, 73, 73);
+}
+.reply_cmt span,a{
+  font-size:15px;
+  color: rgb(117, 117, 117);
+  font-family:'Cinzel', serif;
+}
+
 .cmtBox{
   width:500px;
   height:50px;
@@ -293,6 +311,10 @@ font-weight:bold;
   font-size:15px;
   font-weight:bold;
   font-family:'Cinzel', serif;
+}
+.search_detail{
+  width:100%;
+  height:50px;
 }
 /** catagory.*/
 
