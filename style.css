@@ -53,31 +53,13 @@
 
 /* ? poloularBox */
 
-.polpuimgBox{
-  height:600px;
-  padding:0%;
-
-}
-.polpular_img{
-  height:100%;
-}
 .adsBox {
   height: 300px;
   padding: 0%;
 }
-.ads_img{
-  height: 100%;
-  padding: 0%;
-  border:none;
-  margin:0%;
-  border-radius: 0%;
-  
-}
-
 .coin{
   border: none;
 }
-
 
 /* * HeatRate */
 
