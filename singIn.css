@@ -7,11 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #e3f2fd;
+  /* height: 100vh; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 .input-field {
   position: relative;
