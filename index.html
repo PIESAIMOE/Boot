@@ -32,9 +32,9 @@
         </a>
       </div>   
 
-      <div class=" search ">
-        <form class="search d-flex p-auto me-3" role="search">
-          <input class="form-control ms-5 me-3" type="search" placeholder="Search"  aria-label="Search">
+      <div class="search">
+        <form class=" d-flex p-auto me-3" role="search">
+          <input class="search-input form-control ms-5 me-3" placeholder="Search"  aria-label="Search">
           <button type="button" class="btn">
             <a href="search.html" >
               <img class="search_png" src="image/search.svg " style="width:25px;" >
@@ -43,16 +43,11 @@
         </form>  
       </div>
 
-      <div class="left d-flex">   
-       <div class="dropdown ">
-        <div class="my-2 " data-bs-toggle="dropdown" aria-expanded="false">     
+      <div class="left d-flex">
+        <a href="aboutCoin.html" class="link-offset-2 link-underline link-underline-opacity-0 text-black">
           <img src="image/coin (3).png"  width="25" height="25" class="coin mb-1">
           <span class="ms-1 fw-bold coin_num me-4">100000000</span>           
-        </div>
-        <ul class="dropdown-menu shadow border-0">
-          <li><a class="dropdown-item fs-6" href="buyingCoin.html">Buying Coin</a></li>
-          <li><a class="dropdown-item fs-6" href="#">Transfer Money</a></li>
-        </ul>
+        </a> 
       </div>
        <!--  -->
        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
@@ -75,47 +70,51 @@
     <div class="container-fluid row h-auto p-0">
       <div class="container-fluid col-sm-7 m-0 p-0">
         <div id="carouselExampleDark" class="carousel carousel-dark slide mt-0 p-0" data-bs-ride="carousel">
-
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
           <div class="carousel-inner">
             <div class="carousel-item active ">
-              <div class="row" style="height:600px;">
-                <div class="polpuimgBox col p-0 " style="height: 100%;">
-                  <img src="image/wineb4jpg" style="height: 100%;" class="polpular_img img-fluid d-block" alt="...">
+              <div class="row">
+                <div class="polpuimgBox col w-100 p-0 ">
+                  <img src="image/art6.jpg" class="polpular_img img-fluid d-block h-100" alt="...">
                 </div>
-                <div class="polpuimgBox col h-100 p-0 " style="height: 100%;">
-                  <img src="image/jel0.jpg" style="height: 100%;"class="polpular_img img-fluid d-block p-0 " alt="...">
+                <div class="polpuimgBox col w-100 p-0">
+                  <img src="image/jel3.jpg" class="polpular_img img-fluid d-block h-100" alt="...">
                 </div>
               </div>
               <div class="carousel-caption d-none d-md-block bg-gradient  w-auto">
                 <h2 class="fw-semibold text-light">Wine & Whiskey</h2>
+              </div>
+            </div>
+            <div class="polpuimgBox carousel-item ">
+              <div class="row">
+                <div class="polpuimgBox col w-100 p-0">
+                  <img src="image/jrl9.jpg" class="polpular_img img-fluid d-block h-100" alt="...">
+                </div>
+                <div class="polpuimgBox col w-100 p-0">
+                  <img src="image/jel3.jpg" class="polpular_img img-fluid d-block h-100" alt="...">
+                </div>
+              </div>              
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="fw-semibold text-light">Jewelry</h2>
               </div>
             </div>
             <div class="polpuimgBox carousel-item">
-              <div class="row" style="height:600px;">
-                <div class="polpuimgBox col p-0 " style="height: 100%;">
-                  <img src="image/wineb4jpg" style="height: 100%;" class="polpular_img img-fluid d-block" alt="...">
+              <div class="row">
+                <div class="polpuimgBox col w-100 p-0">
+                  <img src="image/art6.jpg" class="polpular_img img-fluid d-block h-100" alt="...">
                 </div>
-                <div class="polpuimgBox col h-100 p-0 " style="height: 100%;">
-                  <img src="image/jel0.jpg" style="height: 100%;"class="polpular_img img-fluid d-block p-0 " alt="...">
+                <div class="polpuimgBox col w-100 p-0">
+                  <img src="image/art3.jpg" class="polpular_img img-fluid d-block h-100" alt="...">
                 </div>
-              </div>
-              <div class="carousel-caption d-none d-md-block bg-gradient  w-auto">
-                <h2 class="fw-semibold text-light">Wine & Whiskey</h2>
+              </div>              
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="fw-semibold">Art</h2>
               </div>
             </div>
-            <div class="polpuimgBox carousel-item bg-body-secondary">
-              <div class="row" style="height:600px;">
-                <div class="polpuimgBox col p-0 " style="height: 100%;">
-                  <img src="image/wineb4jpg" style="height: 100%;" class="polpular_img img-fluid d-block" alt="...">
-                </div>
-                <div class="polpuimgBox col h-100 p-0 " style="height: 100%;">
-                  <img src="image/jel0.jpg" style="height: 100%;" class="polpular_img img-fluid d-block p-0 " alt="...">
-                </div>
-              </div>
-              <div class="carousel-caption d-none d-md-block bg-gradient  w-auto">
-                <h2 class="fw-semibold text-light">Wine & Whiskey</h2>
-              </div>
-            </div>         
           </div>
           <button class="carousel-control-prev rounded-circle my-auto" type="button" style="height:5vh; width:5vh; background-color: #9e9e9ea1;" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

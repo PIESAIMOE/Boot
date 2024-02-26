@@ -32,9 +32,9 @@
         </a>
       </div>   
 
-      <div class=" search ">
-        <form class="search d-flex p-auto me-3" role="search">
-          <input class="form-control ms-5 me-3" type="search" placeholder="Search"  aria-label="Search">
+      <div class="search">
+        <form class=" d-flex p-auto me-3" role="search">
+          <input class="search-input form-control ms-5 me-3" placeholder="Search"  aria-label="Search">
           <button type="button" class="btn">
             <a href="search.html" >
               <img class="search_png" src="image/search.svg " style="width:25px;" >
@@ -43,16 +43,11 @@
         </form>  
       </div>
 
-      <div class="left d-flex">   
-       <div class="dropdown ">
-        <div class="my-2 " data-bs-toggle="dropdown" aria-expanded="false">     
+      <div class="left d-flex">
+        <a href="aboutCoin.html" class="link-offset-2 link-underline link-underline-opacity-0 text-black">
           <img src="image/coin (3).png"  width="25" height="25" class="coin mb-1">
           <span class="ms-1 fw-bold coin_num me-4">100000000</span>           
-        </div>
-        <ul class="dropdown-menu shadow border-0">
-          <li><a class="dropdown-item fs-6" href="buyingCoin.html">Buying Coin</a></li>
-          <li><a class="dropdown-item fs-6" href="#">Transfer Money</a></li>
-        </ul>
+        </a> 
       </div>
        <!--  -->
        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
@@ -88,15 +83,24 @@
     <div class="col-6 px-0">
       <h2 class="detail_title container fw-semibold fs-1 mb-5 text-center">Black Chanel Bag</h2>
       <img class="imagebox img-fluid" src="image/bag1.png" id="imagebox" alt="">
-      <form type="submit" class="rateForm shadow rounded-pill  my-3">
-        <button class="rate btn btn-light border-0 rounded-pill" id="1">
-          <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-        </button>
-        <button class="rate btn btn-light border-0 d-none rounded-pill" id="2">
-          <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
-        </button>
-        <span class="count heart_count ms-1">12</span>
-      </form> 
+      <div class="d-flex">
+        <form type="submit" class="rateForm shadow rounded-pill  my-3">
+          <button class="rate btn btn-light border-0 rounded-pill" id="1">
+            <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
+          </button>
+          <button class="rate btn btn-light border-0 d-none rounded-pill" id="2">
+            <i id="reactBefore" class="fa-regular fa-heart" style="color: #333;"></i>
+          </button>
+          <span class="count heart_count ms-1">19</span>
+        </form>
+        <a  href="advertising.html">
+          <div type="submit" class="rateForm shadow rounded-pill my-3  mx-3">
+            <button class="btn btn-light border-0 rounded-pill">
+              Advertising
+            </button>
+        </div> 
+        </a> 
+      </div>
       <div class="content mt-5">
         <div class="accordion" id="accordionPanelsStayOpenExample">
           <div class="accordion-item border-0">
@@ -165,7 +169,7 @@
                 Reply
               </a>
               <div class="collapse" id="reply1">
-                <input type=" text" class="border-0 border-bottom p-2 mb-4" style="width:500px;" placeholder=" reply review">
+                <input type=" text" class="cmtBox border-0 border-bottom p-2 mb-4" placeholder=" reply review">
                 <button type="button" class="btn btn-dark shadow rounded-end">
                   <i class="fa-solid fa-reply" style="color: #ffffff;"></i>
                 </button>
@@ -214,7 +218,7 @@
                 Reply
               </a>
               <div class="collapse" id="reply2">
-                <input type=" text" class="border-0 border-bottom p-2 mb-4" style="width:500px;" placeholder=" reply review">
+                <input type=" text" class="cmtBox border-0 border-bottom p-2 mb-4" placeholder=" reply review">
                 <button type="button" class="btn btn-dark shadow rounded-end">
                   <i class="fa-solid fa-reply" style="color: #ffffff;"></i>
                 </button>
@@ -248,7 +252,7 @@
                 Reply
               </a>
               <div class="collapse" id="reply3">
-                <input type=" text" class="border-0 border-bottom p-2 mb-4" style="width:500px;" placeholder=" reply review">
+                <input type=" text" class="cmtBox border-0 border-bottom p-2 mb-4" placeholder=" reply review">
                 <button type="button" class="btn btn-dark shadow rounded-end">
                   <i class="fa-solid fa-reply" style="color: #ffffff;"></i>
                 </button>

@@ -11,12 +11,11 @@
     color:#000000;
     /* font-family: "Philosopher", sans-serif; */
     font-family: "Amaranth", sans-serif;
-    
 }
 
 .logo{
     height: 35px;
-  }
+}
 .search .btn{
     position:absolute;
     border:none;
@@ -25,8 +24,9 @@
     display:none;
     margin: 0 10px 0 30px;
 }
-.form-control{
-  width: 300px;
+
+.search{
+  width:400px;
 }
  
 .header{
@@ -50,16 +50,36 @@
   font-size: 25px;
   
 }
-
 /* ? poloularBox */
 
+.polpuimgBox{
+  height:600px;
+  padding:0%;
+
+}
+.polpular_img{
+  height:100%;
+  width:100%;
+
+}
 .adsBox {
   height: 300px;
   padding: 0%;
 }
+.ads_img{
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+  border:none;
+  margin:0%;
+  border-radius: 0%;
+  
+}
+
 .coin{
   border: none;
 }
+
 
 /* * HeatRate */
 
@@ -94,8 +114,8 @@
 .detail_page{
     height:10rem;
 }
-
 /* *trem */
+
 .followUs{
   display: block;
   font-size: 30px;
@@ -119,7 +139,6 @@
  text-decoration: none;
 
 }
-
 
 /**detail */
 
@@ -226,6 +245,7 @@
   height:50px;
   border:2px solid black;
 }
+
 .sentBtn{
   border-radius:0%;
   height: 50px;
@@ -342,30 +362,30 @@ font-weight:bold;
 
 /**media  */
 @media (max-width:1200px) {
-  .form-control{
-    width:200px;
+  
+  .search{
+    width:300px;
   }
   .logo_name{
     font-size:30px;
   }
   .logo{
     height: 30px;
-    /* margin-bottom: 50px; */
   }
+
 }
 
 @media (max-width:991px) {
 * {
-    font-size: small;
+    font-size: medium;
   }
-
-  .form-control{
-    width:150px;
+  .search{
+    width:300px;
   }
   .logo_name{
     display: none;
-    font-size:20px;
   }
+
   .user{
     width: 37px;
     height: 37px;
@@ -400,32 +420,35 @@ font-weight:bold;
     font-size:medium;
   }
   .logo{
-    height: 20px;
+    height: 30px;
   }
+  .cmtBox{
+    width:400px;
+  }
+  .bidInput{
+    width:150px;
+  }
+  .setBid{
+    margin:20px 0px;
+   
+  }
+  
 
 }
-@media (max-width:768px) {
+@media (max-width:770px) {
 
-  .form-control{
-    width:120px;
-  }
-  .logo_name{
-    display: none;
-    font-size:20px;
-  }
-  .logo{
-    margin-left:20px;
+  .search{
+    width:200px;
   }
   .user{
     width: 30px;
     height: 30px;
   }
+  .logo{
+    height:25px;
+  }
 
   .noti{
-    width: 20px;
-    height: 20px;
-  }
-  .search_png{
     width: 20px;
     height: 20px;
   }

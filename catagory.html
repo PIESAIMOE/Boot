@@ -15,59 +15,54 @@
 </head>
 <body>
 
-  <nav class="navbar fixed-top"  style="background-color: #ffffff;">
+    <nav class="navbar fixed-top"  style="background-color: #ffffff;">
     
-    <div class="navBar container ps-0">
-      <div class="right m-1 d-flex">
-        <a class="link-dark link-underline-opacity-0 d-flex" href="index.html">
-          <img src="image/eagle1.jpg" alt="Logo" class="logo d-inline-block mt-1">
-          <div>
-            <span class=" text logo_name me-3 ms-2">Eagle Auction</span>
+        <div class="navBar container ps-0">
+          <div class="right m-1 d-flex">
+            <a class="link-dark link-underline-opacity-0 d-flex" href="index.html">
+              <img src="image/eagle1.jpg" alt="Logo" class="logo d-inline-block mt-1">
+              <div>
+                <span class=" text logo_name me-3 ms-2">Eagle Auction</span>
+              </div>
+            </a>
+            <a class="link-dark link-underline-opacity-0 d-flex" href="catagory.html">
+              <div class="catago navbar-text mx-3 mt-1 pt-2">
+                <span class="text-black">CATAGORIES</span>
+              </div> 
+              <img src="image/cata.png" width="25" height="25" class="cata my-2">
+            </a>
+          </div>   
+    
+          <div class="search">
+            <form class=" d-flex p-auto me-3" role="search">
+              <input class="search-input form-control ms-5 me-3" placeholder="Search"  aria-label="Search">
+              <button type="button" class="btn">
+                <a href="search.html" >
+                  <img class="search_png" src="image/search.svg " style="width:25px;" >
+                </a>          
+              </button>
+            </form>  
           </div>
-        </a>
-        <a class="link-dark link-underline-opacity-0 d-flex" href="catagory.html">
-          <div class="catago navbar-text mx-3 mt-1 pt-2">
-            <span class="text-black">CATAGORIES</span>
-          </div> 
-          <img src="image/cata.png" width="25" height="25" class="cata my-2">
-        </a>
-      </div>   
-
-      <div class=" search ">
-        <form class="search d-flex p-auto me-3" role="search">
-          <input class="form-control ms-5 me-3" type="search" placeholder="Search"  aria-label="Search">
-          <button type="button" class="btn">
-            <a href="search.html" >
-              <img class="search_png" src="image/search.svg " style="width:25px;" >
-            </a>          
-          </button>
-        </form>  
-      </div>
-
-      <div class="left d-flex">   
-       <div class="dropdown ">
-        <div class="my-2 " data-bs-toggle="dropdown" aria-expanded="false">     
-          <img src="image/coin (3).png"  width="25" height="25" class="coin mb-1">
-          <span class="ms-1 fw-bold coin_num me-4">100000000</span>           
+    
+          <div class="left d-flex">
+            <a href="aboutCoin.html" class="link-offset-2 link-underline link-underline-opacity-0 text-black">
+              <img src="image/coin (3).png"  width="25" height="25" class="coin mb-1">
+              <span class="ms-1 fw-bold coin_num me-4">100000000</span>           
+            </a> 
+          </div>
+           <!--  -->
+           <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            
+          </div>
+           <!--  -->
+            <a class="nav-link me-3" href="signIn.html" >
+              <i class="user fa-regular fa-user py-1 " style="color: #000000;font-size: 25px;"></i>
+            </a>
+          </div>
         </div>
-        <ul class="dropdown-menu shadow border-0">
-          <li><a class="dropdown-item fs-6" href="buyingCoin.html">Buying Coin</a></li>
-          <li><a class="dropdown-item fs-6" href="#">Transfer Money</a></li>
-        </ul>
-      </div>
-       <!--  -->
-       <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-        
-      </div>
-       <!--  -->
-        <a class="nav-link me-3" href="signIn.html" >
-          <i class="user fa-regular fa-user py-1 " style="color: #000000;font-size: 25px;"></i>
-        </a>
-      </div>
-    </div>
-  </nav>
-
-<!-- ..............................-->
+      </nav>
+    
+    <!-- ..............................-->
     
       <!-- ------------------------------- -->
     <div class="header container"> 
@@ -75,152 +70,153 @@
     </div>
     <div class="container text-center">
         <div class="row align-items-center">
-          <div class="col-3 col-sm-3">
-            <a class="link-underline link-underline-opacity-0" class="link-underline link-underline-opacity-0" href="search.html">
-                <div class="card mb-lg-5" style="max-width: 400px;background-color: #1c819be8;">
-                    <div class="cata_card cata_card row g-0">
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title fw-semibold">Art Paint</h5>
+            <div class="col-3 col-sm-3">
+                <a class="link-underline link-underline-opacity-0" class="link-underline link-underline-opacity-0" href="search.html">
+                    <div class="card mb-lg-5 my-3" style="max-width: 400px;background-color: #1c819be8;">
+                        <div class="cata_card cata_card row g-0">
+                            <div class="col-md-8">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title fw-semibold py-3" >Art&Paint</h5>
+                                </div>
+                            </div>
+                            <div class="cata-img col-md-4">
+                                <img src="image/art.jpg" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">
                             </div>
                         </div>
-                        <div class="cata-img col-md-4">
-                            <img src="image/art.jpg" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">
-                        </div>
-                    </div>
-                </div>      
-            </a>   
-        </div>
-        <div class="col-3 col-sm-3"> 
-            <a class="link-underline link-underline-opacity-0" href="search.html">
-                <div class="card mb-lg-5" style="max-width: 400px;background-color: #a3646ee0;">
-                    <div class="cata_card row g-0">
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title fw-semibold">Books Cosmics</h5>
-                            </div>
-                        </div>
-                        <div class="cata-img col-md-4">
-                            <img src="image/book3.jpg" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">
-                        </div>
-                    </div>
-                </div>      
-            </a>   
-        </div>
-        <div class="col-3 col-sm-3">
-            <a class="link-underline link-underline-opacity-0" href="search.html">
-                <div class="card mb-lg-5" style="max-width: 400px;background-color: #b1999e;">
-                    <div class="cata_card row g-0">
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title fw-semibold">Electronic Devices Accessories</h5>
-                            </div>
-                        </div>
-                        <div class="cata-img col-md-4">
-                            <img src="image/ele1.jpg" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">
-                        </div>
-                    </div>
-                </div>      
-            </a>    
-        </div>
-        <div class="col-3 col-sm-3">
-            <a class="link-underline link-underline-opacity-0" href="search.html">
-                <div class="card mb-lg-5" style="max-width: 400px;background-color: #e738385d;">
-                    <div class="cata_card row g-0">
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title fw-semibold">Fashion Clothings Bag</h5>
-                            </div>
-                        </div>
-                        <div class="cata-img col-md-4">
-                            <img src="image/clo3.jpg" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">
-                        </div>
-                    </div>
-                </div>      
-            </a>      
-        </div>
-      
-          <!-- Force next columns to break to new line at md breakpoint and up -->
-        <div class="w-100 d-none d-md-block"></div>
-      
-   
-        <div class="col-3 col-sm-3">
-            <a class="link-underline link-underline-opacity-0" href="search.html">
-                <div class="card mb-lg-5" style="max-width: 400px;background-color: #af5f78c2;">
-                    <div class="cata_card row g-0">
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title fw-semibold">Furnitures Decoration</h5>
-                            </div>
-                        </div>
-                        <div class="cata-img col-md-4">
-                            <img src="image/funi1.jpg" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">
-                        </div>
-                    </div>
-                </div>      
-            </a>      
-        </div>
-        <div class="col-3 col-sm-3">
-            <a class="link-underline link-underline-opacity-0" href="search.html">
-                <div class="card mb-lg-5" style="max-width: 400px;background-color: #ffc941c4 ;">
-                    <div class="cata_card row g-0">
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title fw-semibold">Jewellery Gems</h5>
-                            </div>
-                        </div>
-                        <div class="cata-img col-md-4">
-                            <img src="image/jel2.jpg" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">
-                        </div>
-                    </div>
-                </div>      
-            </a>      
-        </div>
-        <div class="col-3 col-sm-3">
-            <a class="link-underline link-underline-opacity-0" href="search.html">
-                <div class="card mb-lg-5" style="max-width: 400px;background-color: rgb(252, 223, 179);">
-                    <div class="cata_card row g-0">
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title fw-semibold">Luxury Accessories Perfume</h5>
-                            </div>
-                        </div>
-                        <div class="cata-img col-md-4">
-                            <img src="image/lux1.jpg" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">
-                        </div>
-                    </div>
-                </div>      
-            </a>  
-        </div>
+                    </div>      
+                </a>   
+            </div>
 
-        <div class="col-3 col-sm-3">
-            <a class="link-underline link-underline-opacity-0" href="search.html">
-                <div class="card mb-lg-5" style="max-width: 400px;background-color: #c6b66ed0;">
-                    <div class="cata_card row g-0">
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title fw-semibold">Musical Camera Art</h5>
-                            </div>
-                        </div>
-                        <div class="cata-img col-md-4">
-                            <img src="image/muc6.jpg" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">
-                        </div>
-                    </div>
-                </div>      
-            </a>  
-        </div>
-
-        <div class="w-100 d-none d-md-block"></div>
-      
-   
-           <div class="col-3 col-sm-3">
+            <div class="col-3 col-sm-3"> 
                 <a class="link-underline link-underline-opacity-0" href="search.html">
-                    <div class="card mb-lg-5" style="max-width: 400px;background-color: #cc7f6cda;">
+                    <div class="card mb-lg-5 my-3" style="max-width: 400px;background-color: #a3646ee0;">
                         <div class="cata_card row g-0">
                             <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-semibold">Shoes Footwear</h5>
-                                    </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title fw-semibold py-3" style="color: #4d2128f1;">Books&Comics</h5>
+                                </div>
+                            </div>
+                            <div class="cata-img col-md-4">
+                                <img src="image/book3.jpg" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">
+                            </div>
+                        </div>
+                    </div>      
+                </a>   
+            </div>
+            <div class="col-3 col-sm-3">
+                <a class="link-underline link-underline-opacity-0" href="search.html">
+                    <div class="card mb-lg-5 my-3" style="max-width: 400px;background-color: #b1999e;">
+                        <div class="cata_card row g-0">
+                            <div class="col-md-8">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title fw-semibold py-3 " style="color: #74255c;">Electronic Devices&Accessories</h5>
+                                </div>
+                            </div>
+                            <div class="cata-img col-md-4">
+                                <img src="image/ele1.jpg" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">
+                            </div>
+                        </div>
+                    </div>      
+                </a>    
+            </div>
+            <div class="col-3 col-sm-3">
+                <a class="link-underline link-underline-opacity-0" href="search.html">
+                    <div class="card mb-lg-5 my-3 " style="max-width: 400px;background-color: #e738385d;">
+                        <div class="cata_card row g-0">
+                            <div class="col-md-8">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title fw-semibold py-3" style="color: #a30505d7;">Fashion Clothings&Bag</h5>
+                                </div>
+                            </div>
+                            <div class="cata-img col-md-4">
+                                <img src="image/clo3.jpg" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">
+                            </div>
+                        </div>
+                    </div>      
+                </a>      
+            </div>
+      
+          <!-- Force next columns to break to new line at md breakpoint and up -->
+            <div class="w-100 d-none d-md-block"></div>
+      
+   
+            <div class="col-3 col-sm-3">
+                <a class="link-underline link-underline-opacity-0" href="search.html">
+                    <div class="card mb-lg-5 my-3" style="max-width: 400px;background-color: #af5f78c2;">
+                        <div class="cata_card row g-0">
+                            <div class="col-md-8">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title fw-semibold py-3">Furnitures Decoration</h5>
+                                </div>
+                            </div>
+                            <div class="cata-img col-md-4">
+                                <img src="image/funi1.jpg" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">
+                            </div>
+                        </div>
+                    </div>      
+                </a>      
+            </div>
+            <div class="col-3 col-sm-3">
+                <a class="link-underline link-underline-opacity-0" href="search.html">
+                    <div class="card mb-lg-5 my-3" style="max-width: 400px;background-color: #ffc941c4 ;">
+                        <div class="cata_card row g-0">
+                            <div class="col-md-8">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title fw-semibold py-3" style="color: #6e1c29f1;">Jewellery&Gems</h5>
+                                </div>
+                            </div>
+                            <div class="cata-img col-md-4">
+                                <img src="image/jel2.jpg" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">
+                            </div>
+                        </div>
+                    </div>      
+                </a>      
+            </div>
+            <div class="col-3 col-sm-3">
+                <a class="link-underline link-underline-opacity-0" href="search.html">
+                    <div class="card mb-lg-5 my-3" style="max-width: 400px;background-color: rgb(252, 223, 179);">
+                        <div class="cata_card row g-0">
+                            <div class="col-md-8">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title fw-semibold p-3 " style="color: #6e1c29f1;">Luxury Accessories&Perfume</h5>
+                                </div>
+                            </div>
+                            <div class="cata-img col-md-4">
+                                <img src="image/lux1.jpg" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">
+                            </div>
+                        </div>
+                    </div>      
+                </a>  
+            </div>
+
+            <div class="col-3 col-sm-3">
+                <a class="link-underline link-underline-opacity-0" href="search.html">
+                    <div class="card mb-lg-5 my-3" style="max-width: 400px;background-color: #c6b66ed0;">
+                        <div class="cata_card row g-0">
+                            <div class="col-md-8">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title fw-semibold py-3" style="color: #6e1c29f1;">Musical Art&Camera</h5>
+                                </div>
+                            </div>
+                            <div class="cata-img col-md-4">
+                                <img src="image/muc6.jpg" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">
+                            </div>
+                        </div>
+                    </div>      
+                </a>  
+            </div>
+
+            <div class="w-100 d-none d-md-block"></div>
+      
+   
+            <div class="col-3 col-sm-3">
+                <a class="link-underline link-underline-opacity-0" href="search.html">
+                    <div class="card mb-lg-5 my-3" style="max-width: 400px;background-color: #cc7f6cda;">
+                        <div class="cata_card row g-0">
+                            <div class="col-md-8">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title fw-semibold py-3" style="color: #4d2128f1;">Shoes&Footwear</h5>
+                                </div>
                             </div>
                             <div class="cata-img col-md-4">
                                 <img src="image/shoes4.png" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">
@@ -231,12 +227,12 @@
             </div>
             <div class="col-3 col-sm-3">
                 <a class="link-underline link-underline-opacity-0" href="search.html">
-                    <div class="card mb-lg-5" style="max-width: 400px;background-color:#574747be;">
+                    <div class="card mb-lg-5 my-3" style="max-width: 400px;background-color:#574747be;">
                         <div class="cata_card row g-0">
                             <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-semibold">Vehicles</h5>
-                                    </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title fw-semibold py-3" style="color: #4d0c16f1;" >Vehicles</h5>
+                                </div>
                             </div>
                             <div class="cata-img col-md-4">
                                 <img src="image/car5.jpg" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">
@@ -247,12 +243,12 @@
             </div>
             <div class="col-3 col-sm-3">
                 <a class="link-underline link-underline-opacity-0" href="search.html">
-                    <div class="card mb-lg-5" style="max-width: 400px;background-color: #DDD1C0  ;">
+                    <div class="card mb-lg-5 my-3" style="max-width: 400px;background-color: #DDD1C0  ;">
                         <div class="cata_card row g-0">
                             <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-semibold">Wine Whiskey</h5>
-                                    </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title fw-semibold py-3" style="color: #6e1c29f1;">Wine&Whiskey</h5>
+                                </div>
                             </div>
                             <div class="cata-img col-md-4">
                                 <img src="image/wine9.jpg" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">
@@ -263,12 +259,12 @@
             </div>
             <div class="col-3 col-sm-3">
                 <a class="link-underline link-underline-opacity-0" href="search.html">
-                    <div class="card mb-lg-5" style="max-width: 400px;background-color: #b99470dc;">
+                    <div class="card mb-lg-5 my-3" style="max-width: 400px;background-color: #b99470dc;">
                         <div class="cata_card row g-0">
                             <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-semibold">Others</h5>
-                                    </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title fw-semibold py-3">Others</h5>
+                                </div>
                             </div>
                             <div class="cata-img col-md-4">
                                 <img src="image/122.png" class="cata-image img-fluid rounded-start-pill" alt="image/10.png">

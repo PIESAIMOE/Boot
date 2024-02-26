@@ -34,9 +34,9 @@
         </a>
       </div>   
 
-      <div class=" search ">
-        <form class="search d-flex p-auto me-3" role="search">
-          <input class="form-control ms-5 me-3" type="search" placeholder="Search"  aria-label="Search">
+      <div class="search">
+        <form class=" d-flex p-auto me-3" role="search">
+          <input class="search-input form-control ms-5 me-3" placeholder="Search"  aria-label="Search">
           <button type="button" class="btn">
             <a href="search.html" >
               <img class="search_png" src="image/search.svg " style="width:25px;" >
@@ -45,16 +45,11 @@
         </form>  
       </div>
 
-      <div class="left d-flex">   
-       <div class="dropdown ">
-        <div class="my-2 " data-bs-toggle="dropdown" aria-expanded="false">     
+      <div class="left d-flex">
+        <a href="aboutCoin.html" class="link-offset-2 link-underline link-underline-opacity-0 text-black">
           <img src="image/coin (3).png"  width="25" height="25" class="coin mb-1">
           <span class="ms-1 fw-bold coin_num me-4">100000000</span>           
-        </div>
-        <ul class="dropdown-menu shadow border-0">
-          <li><a class="dropdown-item fs-6" href="buyingCoin.html">Buying Coin</a></li>
-          <li><a class="dropdown-item fs-6" href="#">Transfer Money</a></li>
-        </ul>
+        </a> 
       </div>
        <!--  -->
        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
@@ -69,6 +64,8 @@
   </nav>
 
 <!-- ..............................-->
+
+<!-- ..............................-->
       <!-- *******Coin******** -->
     <div class="container mt-5 pt-5">
         <span class="fs-4 fw-semibold">1
@@ -80,16 +77,24 @@
     </div>
 
          <!-- *******/Coin******** -->
-         <!-- ?Form -->
-    <div class="container mt-3 p-3">
-        <form class="">
-            <div class="row">
-            <!-- *******FormInput******* -->
-                <div class="col-8">
-    
-                    <div class="row my-4">
-                        
-                    <!-- *Coin Amount -->
+    <div class="container">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active text-dark" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Buying Coin</button>
+            <button class="nav-link text-dark" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Transfer Money</button>
+          </div>
+        </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                <!-- ?Form -->
+              <div class="container mt-3 p-3">
+                <form class="">
+                    <div class="row">
+                    <!-- *******FormInput******* -->
+                    <div class="col-8">
+
+                      <div class="row my-4">      
+                      <!-- *Coin Amount -->
                         <div class="col-6 ">
                             <label for="validationServer01" class="form-label fw-semibold">Coin Amount</label>
                             <div class="singup_inputfield">
@@ -103,15 +108,11 @@
                                 <span class="fs-4 fw-semibold">MMK</span>    
                             </div>
                         </div>
-                         
-
-                    </div>
-
-                    <!-- ** -->
-                    <div class="row my-4">
-
-                         <!-- *NRC -->
-                         <div class="col-6">
+                      </div>
+                      <!-- ** -->
+                      <div class="row my-4">
+                        <!-- *NRC -->
+                        <div class="col-6">
                             <label for="validationServer08" class="form-label fw-semibold" >NRC.No</label>
                             <div class="singup_inputfield row row-cols-4">
                                 <div class="col">
@@ -150,21 +151,20 @@
                                     <input type="text" class="px-2 w-100 " onkeyup="numberonly(this)" maxlength="6" >    
                                 </div>
                             </div>             
-                        </div>
-                        
-                        <!-- PH.NO -->
-                        <div class="col-6 ">
-                            <label for="validationServer08" class="form-label fw-semibold">Ph.No</label>
-                            <div class="singup_inputfield input-group flex-nowrap">
-                            <span class=" input-group-text bg-body-secondary" id="addon-wrapping">+959</span>
-                            <input type="text"  id="phNo"  maxlength="9" required>
-                            <i class="icon fa-regular fa-circle-check"></i>
-                            </div>       
-                        </div>                 
-                    </div>
+                          </div>
+                          
+                          <!-- PH.NO -->
+                          <div class="col-6 ">
+                              <label for="validationServer08" class="form-label fw-semibold">Ph.No(Payment)</label>
+                              <div class="singup_inputfield input-group flex-nowrap">
+                              <span class=" input-group-text bg-body-secondary" id="addon-wrapping">+959</span>
+                              <input type="text"  id="phNo"  maxlength="9" required>
+                              <i class="icon fa-regular fa-circle-check"></i>
+                              </div>       
+                          </div>                 
+                      </div>
 
-                    <div class="row my-4">
-                        <!-- Invoice No -->
+                      <div class="row my-4">                <!-- Invoice No -->
                         <div class="col-6 ">
                           <label for="validationServer01" class="form-label fw-semibold">Invoice No</label>
                           <div class="singup_inputfield">
@@ -174,7 +174,7 @@
                         </div>
                       <!-- Payment -->
                         <div class="col-6">
-                            <label class="form-label fw-semibold">Payment</label>
+                            <label class="form-label fw-semibold">Payment Method</label>
                             <div>
                               <select class="ps-2 bg-body" style="width:100%;;height:50px;" required>     
                               <option value="kaypay">Kaypay</option>
@@ -183,12 +183,11 @@
                               </select>            
                             </div>
                         </div>
-                    </div>   
-                        
-                </div>
-            <!-- *******/FormInput******* -->
-                
-                <div class="col-4">
+                      </div> 
+
+                    </div>
+              <!-- *******/FormInput******* -->                
+                  <div class="col-4">
                     <h4>E-Receipt Photo</h4>
                     <div class="col rounded p-0" style="height: 100%;">
                         <div class="container-fluid position-relative" style="height: 100%;">
@@ -196,17 +195,109 @@
                           <label  for="invoice_photo">
                             <img src="image/sellphoto.jpg" id="invoice_image" style="height:100%;" class="img-fluid position-absolute top-50 start-50 translate-middle" alt="...">          
                           </label>                     
-                         </div>
+                        </div>
                       </div> 
-                </div>      
+                  </div>      
+                </div>
+                <button class="btn bg-dark text-white">Buying Coin</button>
+               <!-- *******/FormInput******* -->
+              </form>
             </div>
-            <button class="btn bg-dark text-white">Buying Coin</button>
+        </div>
 
-        </form>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+          <form class="container mt-3 p-3">
+            <!-- *******FormInput******* -->
+            <div class="col-8">
+              <div class="row my-4">
+              <!-- *Coin Amount -->
+                <div class="col-6 ">
+                  <label for="validationServer01" class="form-label fw-semibold">Coin Amount</label>
+                  <div class="singup_inputfield">
+                      <input type="text" class="bg-body" id="sellingcoin_amt" required>
+                  </div>
+                </div>
+                <div class="col-6 position-relative">
+                  <div class="position-absolute top-50 start-0 translate-middle-y">
+                      <i class="fa-solid fa-arrow-right-arrow-left mx-2 fs-5" style="color: #000000;"></i>
+                      <span class="fs-4 fw-semibold" id="selling_mmk" value="0">0</span>
+                      <span class="fs-4 fw-semibold">MMK</span>    
+                  </div>
+                </div>
+              </div>
+        
+            <!-- ** -->
+              <div class="row my-4">
+              <!-- *NRC -->
+                <div class="col-6">
+                  <label for="validationServer08" class="form-label fw-semibold" >NRC.No</label>
+                  <div class="singup_inputfield row row-cols-4">
+                    <div class="col">
+                      <select class="code_select text-center p-0 me-1 w-100">
+                        <option value="1">၁</option>
+                        <option value="2">၂</option>
+                        <option value="3">၃</option>
+                        <option value="4">၄</option>
+                        <option value="5">၅</option>
+                        <option value="6">၆</option>
+                        <option value="7">၇</option>
+                        <option value="8">၈</option>
+                        <option value="9">၉</option>
+                        <option value="10">၁၀</option>
+                        <option value="11">၁၁</option>
+                        <option value="12">၁၂</option>
+                        <option value="13">၁၃</option>
+                        <option value="14">၁၄</option>
+                      </select>
+                    </div>
+                      <!-- -------------- -->
+                    <div class="col p-0">
+                        <input type="text" class="px-2 w-100">
+                    </div>
+                      <!-- --------------- -->
+                    <div class="col">
+                        <select class="select p-0 me-1">
+                        <option value="1">(နိုင်)</option>
+                        <option value="2">(ဧည့်)</option>
+                        <option value="3">(ပြု)</option>
+                        </select> 
+                    </div>
+                      <!-- ----------------- -->
+                    <div class="col p-0">
+                        <input type="text" class="px-2 w-100 " id="selling_nrcNo" onkeyup="numberonly(this)" maxlength="6">    
+                    </div>
+                  </div>             
+                </div>                   
+              </div>
+        
+              <div class="row my-4">
+                  <!-- PH.NO -->
+                <div class="col-6 ">
+                  <label for="validationServer08" class="form-label fw-semibold">Ph.No(Payment)</label>
+                  <div class="singup_inputfield input-group flex-nowrap">
+                  <span class=" input-group-text bg-body-secondary" id="addon-wrapping">+959</span>
+                  <input type="text"  id="selling_phNo"  maxlength="9" required>
+                  <i class="icon fa-regular fa-circle-check"></i>
+                  </div>       
+                </div>     
+              <!-- Payment -->
+                <div class="col-6">
+                    <label class="form-label fw-semibold">Payment Method</label>
+                    <div>
+                    <select class="ps-2 bg-body" style="width:100%;;height:50px;" required>     
+                    <option value="kaypay">Kaypay</option>
+                    <option value="wavepay">Wavepay</option>
+                    <option value="cbpay">CBpay</option>                      
+                    </select>            
+                    </div>
+                </div>
+              </div>          
+            </div>
+            <button class="btn bg-dark text-white">Selling Coin</button>
+          </form>
+        </div>
     </div>
 
-    
-    
 <!-- ..............................-->
     
 
@@ -216,7 +307,7 @@
         let nrcNo = document.getElementById("nrcNo");
         let invoice_no = document.getElementById("invoice_no");
         const icon = document.querySelectorAll(".icon");
-
+        console.log(icon);
         function numberonly(nrcNo){
             var regex = /[^0-9]/;
             nrcNo.value = nrcNo.value.replace(regex,"");
@@ -274,6 +365,42 @@
             console.log(coin_amt.value);
             mmk.innerHTML = coin_amt.value*1000;
         })
+        // #### Selling coin
+        let sellingcoin_amt = document.getElementById("sellingcoin_amt");
+        let selling_mmk = document.getElementById("selling_mmk");
+       
+        sellingcoin_amt.addEventListener("keyup",() => {
+            
+            var regex = /[^0-9]/;
+            sellingcoin_amt.value = sellingcoin_amt.value.replace(regex,"");
+            console.log(sellingcoin_amt.value);
+            selling_mmk.innerHTML = sellingcoin_amt.value*1000;
+        })
+        let selling_phNo = document.getElementById("selling_phNo");
+        let selling_nrcNo = document.getElementById("selling_nrcNo");
+
+        function numberonly(selling_nrcNo){
+            var regex = /[^0-9]/;
+            selling_nrcNo.value = selling_nrcNo.value.replace(regex,"");
+        }
+      
+        selling_phNo.addEventListener("keyup", () =>{
+
+          var regex = /[^0-9]/;
+
+          selling_phNo.value = selling_phNo.value.replace(regex,"");
+
+          if(selling_phNo.value === ""){         
+            return icon[2].style.color = "#b4b4b4"; //normal
+          }
+  
+          if(selling_phNo.value.length < 10 && selling_phNo.value.length > 5 ){       
+             return icon[2].style.color = "#4bb543";  //green
+          }
+  
+          icon[2].style.color = "#de0611"; //red
+        
+        });
 
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
